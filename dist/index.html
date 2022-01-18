@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<link rel="stylesheet" href="style.css">
+		
+		<title>Battleship</title>
+	</head>
+	
+	<body>
+		<div class="header">
+			<h1 id="title">Battleship</h1>
+		</div>
+		<div class="content">
+			<div id="user-board-container">
+				<h3>Player One's Board</h3>
+				<div class="playerBoard"></div>
+			</div>
+			<div id="endGameModal">
+				<div id="endGameContent">
+					<p id="winnerText">Placeholder is the Winner!!</p> 
+					<input type="submit" value="Play Again" id="playAgainButton">
+				</div>
+			</div>
+			<div class="add-ships">
+				<div class="ship" id="battleship" draggable="true">
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+				</div>    
+				<div class="ship" id="carrier" draggable="true">
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+				</div>
+				<div class="ship" id="submarine" draggable="true">
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+				</div>
+				<div class="ship" id="destroyer" draggable="true">
+					<div class="block"></div>
+					<div class="block"></div>
+					<div class="block"></div>
+				</div>
+				<div class="ship" id="patrol-boat" draggable="true">
+					<div class="block"></div>
+					<div class="block"></div>
+				</div>
+			</div>
+			<div id="ai-board-container">
+				<h3>CPU's Board</h3>
+				<div class="aiBoard"></div>
+			</div>
+		</div>
+		</body>
+		<script src="main.js" defer></script>
+		</html>
